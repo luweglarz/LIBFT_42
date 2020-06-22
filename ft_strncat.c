@@ -6,7 +6,7 @@
 /*   By: lweglarz <lweglarz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/17 14:04:25 by lweglarz          #+#    #+#             */
-/*   Updated: 2020/06/17 14:04:55 by lweglarz         ###   ########.fr       */
+/*   Updated: 2020/06/22 11:38:15 by lweglarz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,5 @@ char	*ft_strncat(char *dest, char *src, unsigned int n)
 		j++;
 	}
 	dest[i] = '\0';
+	return (dest);
 }
