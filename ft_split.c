@@ -12,12 +12,12 @@
 
 #include "libft.h"
 
-static	void		ft_free_words(int word, char **tabword)
+void		ft_free_split(char **tabword)
 {
 	int	i;
 
 	i = 0;
-	while (i < word)
+	while (tabword[i])
 	{
 		free(tabword[i]);
 		i++;
@@ -73,7 +73,7 @@ static char			**ft_cut_words(const char *s, char c, char **tab, int words)
 			s++;
 		if (!(tab[j] = malloc(sizeof(char) * (ft_word_len(s, c) + 1))))
 		{
-			ft_free_words(words, tab);
+			ft_free_split(tab);
 			return (NULL);
 		}
 		k = 0;
