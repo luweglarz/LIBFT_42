@@ -28,7 +28,6 @@ OBJS = $(SRCS:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS) libft.h
-	@gcc $(FLAGS) -c $(SRCS)
 	@ar rc $(NAME) $(OBJS)
 	@ranlib $(NAME)
 
